@@ -12,6 +12,8 @@
 		ABF6A3B51F6463E4009ABB70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF6A3B31F6463E4009ABB70 /* Main.storyboard */; };
 		ABF6A3B71F6463E4009ABB70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF6A3B61F6463E4009ABB70 /* Assets.xcassets */; };
 		ABF6A3BA1F6463E4009ABB70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF6A3B81F6463E4009ABB70 /* LaunchScreen.storyboard */; };
+		ABF6A3C21F64726D009ABB70 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF6A3C11F64726D009ABB70 /* RequestManager.swift */; };
+		F3F11A25A7A63CD308F4ECE0 /* Pods_UxbertUsabilityLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBFB0E330E88BFF82294B8D /* Pods_UxbertUsabilityLab.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		ABF6A3B61F6463E4009ABB70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABF6A3B91F6463E4009ABB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABF6A3BB1F6463E4009ABB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF6A3C11F64726D009ABB70 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		AFBFB0E330E88BFF82294B8D /* Pods_UxbertUsabilityLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UxbertUsabilityLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC243E2E60309C9E5BF54EA /* Pods-UxbertUsabilityLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UxbertUsabilityLab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UxbertUsabilityLab/Pods-UxbertUsabilityLab.debug.xcconfig"; sourceTree = "<group>"; };
+		C0786E1C91C9D0397DC13863 /* Pods-UxbertUsabilityLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UxbertUsabilityLab.release.xcconfig"; path = "Pods/Target Support Files/Pods-UxbertUsabilityLab/Pods-UxbertUsabilityLab.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F11A25A7A63CD308F4ECE0 /* Pods_UxbertUsabilityLab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DBF8BEF9A79D810D59A3A9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFBFB0E330E88BFF82294B8D /* Pods_UxbertUsabilityLab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1ABE364A4C771A80FD317DBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFC243E2E60309C9E5BF54EA /* Pods-UxbertUsabilityLab.debug.xcconfig */,
+				C0786E1C91C9D0397DC13863 /* Pods-UxbertUsabilityLab.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ABF6A3A31F6463E4009ABB70 = {
 			isa = PBXGroup;
 			children = (
 				ABF6A3AE1F6463E4009ABB70 /* UxbertUsabilityLab */,
 				ABF6A3AD1F6463E4009ABB70 /* Products */,
+				1ABE364A4C771A80FD317DBA /* Pods */,
+				0DBF8BEF9A79D810D59A3A9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				ABF6A3B61F6463E4009ABB70 /* Assets.xcassets */,
 				ABF6A3B81F6463E4009ABB70 /* LaunchScreen.storyboard */,
 				ABF6A3BB1F6463E4009ABB70 /* Info.plist */,
+				ABF6A3C11F64726D009ABB70 /* RequestManager.swift */,
 			);
 			path = UxbertUsabilityLab;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABF6A3BE1F6463E4009ABB70 /* Build configuration list for PBXNativeTarget "UxbertUsabilityLab" */;
 			buildPhases = (
+				46A804C1A3EC1F424BBAC29B /* [CP] Check Pods Manifest.lock */,
 				ABF6A3A81F6463E4009ABB70 /* Sources */,
 				ABF6A3A91F6463E4009ABB70 /* Frameworks */,
 				ABF6A3AA1F6463E4009ABB70 /* Resources */,
+				52A85B1F22BAE705B68298ED /* [CP] Embed Pods Frameworks */,
+				F9AFADC48C37BA7C15A6B094 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +162,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46A804C1A3EC1F424BBAC29B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		52A85B1F22BAE705B68298ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UxbertUsabilityLab/Pods-UxbertUsabilityLab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9AFADC48C37BA7C15A6B094 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UxbertUsabilityLab/Pods-UxbertUsabilityLab-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ABF6A3A81F6463E4009ABB70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF6A3C21F64726D009ABB70 /* RequestManager.swift in Sources */,
 				ABF6A3B21F6463E4009ABB70 /* ViewController.swift in Sources */,
 				ABF6A3B01F6463E4009ABB70 /* AppDelegate.swift in Sources */,
 			);
@@ -259,6 +338,7 @@
 		};
 		ABF6A3BF1F6463E4009ABB70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFC243E2E60309C9E5BF54EA /* Pods-UxbertUsabilityLab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LJXU3837V9;
@@ -272,6 +352,7 @@
 		};
 		ABF6A3C01F6463E4009ABB70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0786E1C91C9D0397DC13863 /* Pods-UxbertUsabilityLab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LJXU3837V9;
