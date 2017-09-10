@@ -8,5 +8,7 @@ target 'UxbertUsabilityLab' do
   # Pods for UxbertUsabilityLab
     pod 'SwiftyJSON'
     pod 'Alamofire', '~> 4.5'
+    pod 'PINRemoteImage'
+    pod 'RealmSwift'
 
 end

@@ -9,7 +9,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FLAnimatedImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINRemoteImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-UxbertUsabilityLab.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +47,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>78C7CABB61C4BE7C8D797C75D2FD83A6</key>
+		<key>19929E7916710891EBE862A921AF7323</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>259EF740804637059D74517328EEB656</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3DFBD3E6AEC8FD587A5900EA64549C2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6A4878A4A87B118BAF0877A103373708</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83B5B60C676A8D31829A6AE91CE86A75</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>95895F9B4905173B9F43FCF0A88F1A4E</key>
+		<key>8B1DA22F0D9163A234E536A64E8503C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A02EE1452A6B9ED8895E739554320B81</key>
 		<dict>
 			<key>primary</key>
 			<true/>
