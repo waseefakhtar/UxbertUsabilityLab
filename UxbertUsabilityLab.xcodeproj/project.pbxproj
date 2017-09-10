@@ -16,6 +16,7 @@
 		ABF6A3C51F64AEB3009ABB70 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF6A3C31F64AEB3009ABB70 /* CustomTableViewCell.swift */; };
 		ABF6A3C61F64AEB3009ABB70 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF6A3C41F64AEB3009ABB70 /* CustomTableViewCell.xib */; };
 		ABF6A3C81F65A2A1009ABB70 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF6A3C71F65A2A0009ABB70 /* MovieModel.swift */; };
+		ABF6A3CA1F65E0FE009ABB70 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF6A3C91F65E0FE009ABB70 /* FavoritesViewController.swift */; };
 		F3F11A25A7A63CD308F4ECE0 /* Pods_UxbertUsabilityLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBFB0E330E88BFF82294B8D /* Pods_UxbertUsabilityLab.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		ABF6A3C31F64AEB3009ABB70 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		ABF6A3C41F64AEB3009ABB70 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		ABF6A3C71F65A2A0009ABB70 /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		ABF6A3C91F65E0FE009ABB70 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		AFBFB0E330E88BFF82294B8D /* Pods_UxbertUsabilityLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UxbertUsabilityLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC243E2E60309C9E5BF54EA /* Pods-UxbertUsabilityLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UxbertUsabilityLab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UxbertUsabilityLab/Pods-UxbertUsabilityLab.debug.xcconfig"; sourceTree = "<group>"; };
 		C0786E1C91C9D0397DC13863 /* Pods-UxbertUsabilityLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UxbertUsabilityLab.release.xcconfig"; path = "Pods/Target Support Files/Pods-UxbertUsabilityLab/Pods-UxbertUsabilityLab.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				ABF6A3AF1F6463E4009ABB70 /* AppDelegate.swift */,
 				ABF6A3B11F6463E4009ABB70 /* ViewController.swift */,
+				ABF6A3C91F65E0FE009ABB70 /* FavoritesViewController.swift */,
 				ABF6A3B31F6463E4009ABB70 /* Main.storyboard */,
 				ABF6A3B61F6463E4009ABB70 /* Assets.xcassets */,
 				ABF6A3B81F6463E4009ABB70 /* LaunchScreen.storyboard */,
@@ -229,6 +232,7 @@
 				ABF6A3B21F6463E4009ABB70 /* ViewController.swift in Sources */,
 				ABF6A3C81F65A2A1009ABB70 /* MovieModel.swift in Sources */,
 				ABF6A3C51F64AEB3009ABB70 /* CustomTableViewCell.swift in Sources */,
+				ABF6A3CA1F65E0FE009ABB70 /* FavoritesViewController.swift in Sources */,
 				ABF6A3B01F6463E4009ABB70 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

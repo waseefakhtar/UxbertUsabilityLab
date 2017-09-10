@@ -45,7 +45,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="OhG-Or-QNP">
                         <nil key="title"/>
-                        <barButtonItem key="rightBarButtonItem" title="Favorites" id="kpM-Mm-RDn"/>
+                        <barButtonItem key="rightBarButtonItem" title="Favorites" id="kpM-Mm-RDn">
+                            <connections>
+                                <segue destination="tTB-46-0hx" kind="show" id="DPu-fI-3tu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="H8U-UL-F36" id="5cf-oD-Zsa"/>
@@ -54,6 +58,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="136.28185907046478"/>
+        </scene>
+        <!--Favorites View Controller-->
+        <scene sceneID="gT0-xP-DTK">
+            <objects>
+                <viewController id="tTB-46-0hx" customClass="FavoritesViewController" customModule="UxbertUsabilityLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b4P-KX-3yG"/>
+                        <viewControllerLayoutGuide type="bottom" id="bZC-W4-vqD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jbw-NK-YB8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VFN-DN-usf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tTB-46-0hx" id="YGS-aC-U46"/>
+                                    <outlet property="delegate" destination="tTB-46-0hx" id="0wP-FL-t35"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bZC-W4-vqD" firstAttribute="top" secondItem="VFN-DN-usf" secondAttribute="bottom" id="b6t-E1-LXv"/>
+                            <constraint firstAttribute="trailing" secondItem="VFN-DN-usf" secondAttribute="trailing" id="r3c-lR-EyM"/>
+                            <constraint firstItem="VFN-DN-usf" firstAttribute="leading" secondItem="Jbw-NK-YB8" secondAttribute="leading" id="t3C-or-rzb"/>
+                            <constraint firstItem="VFN-DN-usf" firstAttribute="top" secondItem="Jbw-NK-YB8" secondAttribute="top" id="zcA-yf-V65"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="VFN-DN-usf" id="pKE-6y-qup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKR-36-L9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2180" y="136.28185907046478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gIe-aG-B1b">
